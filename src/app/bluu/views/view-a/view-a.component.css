@@ -1,0 +1,19 @@
+.cent {
+    font-family: 'coconbold';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 35px;
+}
+
+.centsub {
+    font-family: 'calibri';
+    font-weight: normal;
+    font-style: normal;
+    color: white;
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 15px;
+}
