@@ -1,7 +1,7 @@
 .footer {
     background: $footer-bg;
     padding: 0.5rem 0;
-    //color: $footer-color;
+    color: $footer-color;
     .col-footer {
         .heading {
             color: $footer-heading-color;
@@ -15,8 +15,14 @@
     .nav .nav-item .nav-link,
     .footer-link {
         color: $footer-link-color !important;
+        font-weight: bold;
         &:hover {
             color: $footer-link-hover-color !important;
+        }
+        .fa {
+            color: $footer-icon-color !important;
+            font-size: $footer-icon-font-size;
+            margin-right: 0.5rem;
         }
     }
     .list-unstyled li a {
@@ -64,7 +70,7 @@
 
 .nav-footer {
     .nav-link {
-        font-size: $font-size-sm;
+        font-size: $font-size-xs;
     }
     .nav-item:last-child {
         .nav-link {

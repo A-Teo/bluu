@@ -52,6 +52,7 @@ $youtube: #cd201f !default;
 $slack: #3aaf85 !default;
 $dribbble: #ea4c89 !default;
 $github: #222222 !default;
+$title-color: #00476d !default;
 $theme-colors: () !default;
 $theme-colors: map-merge(( "default": $default, "primary": $primary, "secondary": $secondary, "success": $success, "info": $info, "warning": $warning, "danger": $danger, "white": $white, "neutral": $white, "dark": $dark, "darker": $darker), $theme-colors);
 $brand-colors: () !default;
@@ -574,10 +575,12 @@ $datepicker-dropdown-border: lighten($gray-400,
 $datepicker-dropdown-bg: $white !default;
 $datepicker-highlighted-bg: $datepicker-active-background !default;
 // Footer
-$footer-link-font-size: .85rem !default;
+$footer-link-font-size: .75rem !default;
+$footer-icon-font-size: 1.2rem !default;
 $footer-bg: theme-color("secondary") !default;
 $footer-color: $gray-600 !default;
-$footer-link-color: $white !default;
+$footer-icon-color: $white !default;
+$footer-link-color: $title-color !default;
 $footer-link-hover-color: $gray-700 !default;
 $footer-heading-color: $gray-600 !default;
-$footer-heading-font-size: $font-size-sm !default;
+$footer-heading-font-size: $font-size-xs !default;
