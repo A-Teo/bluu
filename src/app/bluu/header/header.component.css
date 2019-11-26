@@ -1,7 +1,7 @@
 /* change the background color */
 
 .navbar-custom {
-    background-color: #00466C;
+    background: url('/assets/img/theme/header-bg.png') no-repeat center center /100% 100%;
 }
 
 
