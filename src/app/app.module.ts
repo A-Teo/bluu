@@ -37,6 +37,7 @@ import { ViewBComponent } from './bluu/views/view-b/view-b.component';
 import { ViewCComponent } from './bluu/views/view-c/view-c.component';
 import { ViewDComponent } from './bluu/views/view-d/view-d.component';
 import { ViewEComponent } from './bluu/views/view-e/view-e.component';
+import { RegistrationBannerComponent } from './bluu/registration-banner/registration-banner.component';
 
 @NgModule({
   declarations: [
@@ -65,7 +66,8 @@ import { ViewEComponent } from './bluu/views/view-e/view-e.component';
     ViewBComponent,
     ViewCComponent,
     ViewDComponent,
-    ViewEComponent
+    ViewEComponent,
+    RegistrationBannerComponent
   ],
   imports: [
     BrowserModule,

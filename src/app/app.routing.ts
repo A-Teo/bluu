@@ -15,10 +15,10 @@ import { ViewDComponent } from './bluu/views/view-d/view-d.component';
 import { ViewEComponent } from './bluu/views/view-e/view-e.component';
 
 const routes: Routes = [
-  // { path: 'home', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
   // { path: 'user-profile', component: ProfileComponent },
   // { path: 'register', component: SignupComponent },
-  // { path: 'landing', component: LandingComponent },
+  { path: 'landing', component: LandingComponent },
   // { path: 'login', component: LoginComponent },
   { path: 'view_a', component: ViewAComponent },
   { path: 'view_b', component: ViewBComponent },
