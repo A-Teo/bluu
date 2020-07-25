@@ -1,5 +1,5 @@
 .bg-gray {
-    background-color: #e7e7e7 !important
+    background: transparent url('/assets/img/theme/background.jpg') no-repeat center center /cover;
 }
 
 .btn {

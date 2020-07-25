@@ -1,43 +1,40 @@
-<br>
-<div class="col-12 col-sm-12 col-md-12 col-lg-12">
-    <div class="card">
-        <div class="card-header">
-            <ul class="nav nav-tabs card-header-tabs" role="tablist">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#description" role="tab" aria-controls="description" aria-selected="true">Noticia 1</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" role="tab" aria-controls="cont_1" aria-selected="false">Noticia 2</a>
-                </li>
-            </ul>
-        </div>
-        <div class="card-body">
-            <!-- <h4 class="card-title">Noticia 1</h4> -->
-            <h6 class="card-subtitle mb-2">Campeonato de Taekwondo</h6>
-            <div class="tab-content mt-3">
-                <div class="tab-pane active" id="description" role="tabpanel">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-                    </p>
-                    <p class="card-text">
-                        Día: 26 ago 2019<br>Edades: 13 -18<br>Lugar: Estadio de taekwondo<br>
-                    </p>
-                    <p class="card-text">
-                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod encidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci taon ullamcorper suscipit lobors nisl ut aliquip ex ea commodo
-                        consequat. Duis autem vel eum iriure dolor in hendrerit.
-                    </p>
-                    <a href="#" class="card-link text-danger">Ver más...</a>
-                </div>
-                <div class="tab-pane" id="cont_1" role="tabpanel">
-                    <p class="card-text">event info...</p>
-                    <a href="#" class="card-link text-danger">Ver más...</a>
-                </div>
-            </div>
-        </div>
-    </div>
+<div class="div-container">
+    <ul ngbNav #nav="ngbNav" class="nav-tabs">
+        <li ngbNavItem>
+          <a ngbNavLink>Noticia 1</a>
+          <ng-template ngbNavContent>
+            <h3>
+                Campeonato de Taekwondo<br>
+                <small class="text-muted">Cool Subtitle</small>
+            </h3>
+            <p>
+                <strong>Día:</strong> 26 ago 2019<br><strong>Edades:</strong> 13 -18<br><strong>Lugar:</strong> Estadio de taekwondo<br>
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod encidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci taon ullamcorper suscipit lobors nisl ut aliquip ex ea commodo
+                consequat. Duis autem vel eum iriure dolor in hendrerit.
+            </p>
+            <a href="#" class="text-danger">Ver más...</a>
+          </ng-template>
+        </li>
+        <li ngbNavItem>
+          <a ngbNavLink>Noticia 2</a>
+          <ng-template ngbNavContent>
+            Food truck fixie locavore, accusamus mcsweeney's marfa nulla single-origin coffee
+            squid.
+            <p>Exercitation +1 labore velit, blog sartorial PBR leggings next level wes anderson artisan four loko
+                farm-to-table
+                craft beer twee. Qui photo booth letterpress, commodo enim craft beer mlkshk aliquip jean shorts
+                ullamco ad vinyl
+                cillum PBR. Homo nostrud organic, assumenda labore aesthetic magna delectus mollit. Keytar helvetica
+                VHS salvia
+                yr, vero magna velit sapiente labore stumptown. Vegan fanny pack odio cillum wes anderson 8-bit,
+                sustainable jean
+                shorts beard ut DIY ethical culpa terry richardson biodiesel. Art party scenester stumptown, tumblr
+                butcher vero
+                sint qui sapiente accusamus tattooed echo park.</p>
+          </ng-template>
+        </li>
+    </ul>
+    <div [ngbNavOutlet]="nav"></div>
 </div>
-<script>
-    $('#bologna-list a').on('click', function(e) {
-        e.preventDefault()
-        $(this).tab('show')
-    })
-</script>

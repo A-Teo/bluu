@@ -1,8 +1,8 @@
-import { Component, OnInit, Inject, Renderer, ElementRef, ViewChild, HostListener } from '@angular/core';
+import { Component, OnInit, Inject, Renderer2, ElementRef, ViewChild, HostListener } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
 import { Subscription } from 'rxjs/Subscription';
 import 'rxjs/add/operator/filter';
-import { DOCUMENT } from '@angular/platform-browser';
+import { DOCUMENT } from '@angular/common';
 import { LocationStrategy, PlatformLocation, Location } from '@angular/common';
 
 var didScroll;
@@ -17,8 +17,9 @@ var navbarHeight = 0;
 })
 export class AppComponent implements OnInit {
     private _router: Subscription;
+    menuGoes: boolean = true;
 
-    constructor( private renderer : Renderer, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
+    constructor( private renderer : Renderer2, private router: Router, @Inject(DOCUMENT,) private document: any, private element : ElementRef, public location: Location) {}
     @HostListener('window:scroll', ['$event'])
     hasScrolled() {
 
@@ -53,14 +54,15 @@ export class AppComponent implements OnInit {
         lastScrollTop = st;
     };
     ngOnInit() {
-      var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
       this._router = this.router.events.filter(event => event instanceof NavigationEnd).subscribe((event: NavigationEnd) => {
+          this.doesMenuGoes(this.location.path());
+          var navbar : HTMLElement = this.element.nativeElement.children[0].children[0];
           if (window.outerWidth > 991) {
               window.document.children[0].scrollTop = 0;
           }else{
               window.document.activeElement.scrollTop = 0;
           }
-          this.renderer.listenGlobal('window', 'scroll', (event) => {
+          this.renderer.listen('window', 'scroll', (event) => {
               const number = window.scrollY;
               if (number > 150 || window.pageYOffset > 150) {
                   // add logic
@@ -72,5 +74,12 @@ export class AppComponent implements OnInit {
           });
       });
       this.hasScrolled();
+    }
+
+    private doesMenuGoes(url: string): void {
+        let notViews: string[] = ['view_a', 'view_b', 'view_c'];
+        for (let i = 0; i < notViews.length; i++) {
+            this.menuGoes = this.menuGoes && url.indexOf(notViews[i]) === -1;
+        }
     }
 }

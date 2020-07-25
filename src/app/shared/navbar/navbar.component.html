@@ -1,8 +1,8 @@
 <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom headroom--top headroom--pinned">
   <div class="container">
-    <a class="navbar-brand mr-lg-5" [routerLink]="['/home']">
+    <!-- <a class="navbar-brand mr-lg-5" [routerLink]="['/']">
       <img src="./assets/img/brand/logo-bluu.svg">
-    </a>
+    </a> -->
     <button class="navbar-toggler" type="button" (click)="isCollapsed = !isCollapsed"
           [attr.aria-expanded]="!isCollapsed" aria-controls="navbar_global">
       <span class="navbar-toggler-icon"></span>
@@ -11,7 +11,7 @@
       <div class="navbar-collapse-header">
         <div class="row">
           <div class="col-6 collapse-brand">
-            <a [routerLink]="['/home']">
+            <a [routerLink]="['/']">
               <img src="./assets/img/brand/bluu-other.svg">
             </a>
           </div>
@@ -24,6 +24,50 @@
           </div>
         </div>
       </div>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+            <a class="nav-link" href="/">Inicio<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">Escuelas</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">Noticias</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">Nosotros</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/">Contacto</a>
+        </li>
+
+    </ul>
+    <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+      <li class="nav-item">
+        <a class="nav-link nav-link-icon" href="https://www.facebook.com/bluu" target="_blank" data-toggle="tooltip" title="Siguenos en Facebook">
+          <i class="fa fa-facebook"></i>
+          <span class="nav-link-inner--text d-lg-none">Facebook</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-icon" href="https://www.instagram.com/bluu" target="_blank" data-toggle="tooltip" title="Siguenos en Instagram">
+          <i class="fa fa-instagram"></i>
+          <span class="nav-link-inner--text d-lg-none">Instagram</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link nav-link-icon" href="https://twitter.com/bluu" target="_blank" data-toggle="tooltip" title="Siguenos en Twitter">
+          <i class="fa fa-twitter"></i>
+          <span class="nav-link-inner--text d-lg-none">Twitter</span>
+        </a>
+      </li>
+    </ul>
+    <form class="form-inline">
+      <div class="form-group has-search">
+        <span class="fa fa-search form-control-feedback"></span>
+        <input type="text" class="form-control form-control-sm" placeholder="Buscar...">
+      </div>
+    </form>
       <!-- <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
         <li class="nav-item dropdown">
           <a class="nav-link no-caret" data-toggle="dropdown" role="button">

@@ -1,16 +1,24 @@
 <app-header-v2></app-header-v2>
-<app-carousel></app-carousel>
-<app-categories></app-categories>
+<app-header></app-header>
 <div class="bg-gray">
     <div class="container">
-        <div class="row">
-            <div class="col-md-6">
-                <app-ads></app-ads>
-            </div>
-            <div class="col-md-6">
-                <app-category-info></app-category-info>
-            </div>
-        </div>
+        <ul ngbNav #nav="ngbNav" [activeId]="route.fragment | async" class="nav-pills nav-justified">
+            <li [ngbNavItem]="category.title" *ngFor="let category of categories">
+                <a ngbNavLink routerLink="." [fragment]="category.title">{{ category.title | titlecase }}</a>
+                <ng-template ngbNavContent>
+                    <div class="tab-container">
+                        <div class="category" *ngFor="let subCategory of category.items">
+                            <div class="image">
+                                <img [src]='subCategory.logo' alt="">
+                            </div>
+                            <span>{{ subCategory.title }}</span>
+                        </div>
+                    </div>
+                </ng-template>
+            </li>
+        </ul>
+        
+        <div [ngbNavOutlet]="nav" class="mt-2"></div>
     </div>
 </div>
 <app-footer></app-footer>

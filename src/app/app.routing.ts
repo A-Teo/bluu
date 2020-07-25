@@ -24,8 +24,8 @@ const routes: Routes = [
   { path: 'view_b', component: ViewBComponent },
   { path: 'view_c', component: ViewCComponent },
   { path: 'view_d', component: ViewDComponent },
-  { path: 'view_e', component: ViewEComponent }
-  // { path: '', redirectTo: 'home', pathMatch: 'full' }
+  { path: 'view_e', component: ViewEComponent },
+  { path: '', redirectTo: 'view_a', pathMatch: 'full' }
 ];
 
 @NgModule({
@@ -33,7 +33,7 @@ const routes: Routes = [
     CommonModule,
     BrowserModule,
     RouterModule.forRoot(routes, {
-      useHash: true
+      // useHash: true
     })
   ],
   exports: [

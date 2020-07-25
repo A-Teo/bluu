@@ -20,7 +20,8 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/api"
             ],
             "styles": [
               "src/styles.css",
@@ -124,5 +125,8 @@
       }
     }
   },
-  "defaultProject": "argon-design-system-angular"
+  "defaultProject": "argon-design-system-angular",
+  "cli": {
+    "analytics": false
+  }
 }

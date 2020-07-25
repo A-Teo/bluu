@@ -1,0 +1,22 @@
+/* .nav-tabs>li>a:hover {
+    background-color: deepskyblue!important;
+    color: white!important;
+} */
+
+.div-container {
+    margin: 1rem 0;
+}
+
+div.tab-pane {
+    background: white;
+    padding: 1rem;
+    p {
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+}
+
+.nav-tabs .nav-link {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}

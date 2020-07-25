@@ -1,0 +1,56 @@
+[
+  { 
+    "title": "deportes",
+    "logo": "./assets/img/icons/categories/bicycle.svg",
+    "items": [
+      {
+        "title": "ciclismo",
+        "logo": "./assets/img/icons/categories/bicycle.svg"
+      },
+      {
+        "title": "aletismo",
+        "logo": "./assets/img/icons/categories/bicycle.svg"
+      }
+    ]
+  },
+  { 
+    "title": "arte",
+    "logo": "./assets/img/icons/categories/bicycle.svg",
+    "items": [
+      {
+        "title": "arte 1",
+        "logo": "./assets/img/icons/categories/bicycle.svg"
+      }
+    ]
+  },
+  { 
+    "title": "posibilidades",
+    "logo": "./assets/img/icons/categories/bicycle.svg",
+    "items": [
+      {
+        "title": "posibilidad 1",
+        "logo": "./assets/img/icons/categories/bicycle.svg"
+      }
+    ]
+  },
+  { 
+    "title": "fitness",
+    "logo": "./assets/img/icons/categories/bicycle.svg",
+    "items": [
+      {
+        "title": "fitness 1",
+        "logo": "./assets/img/icons/categories/bicycle.svg"
+      }
+    ]
+  },
+  { 
+    "title": "apoyo",
+    "logo": "./assets/img/icons/categories/bicycle.svg",
+    "items": [
+      {
+        "title": "apoyo 1",
+        "logo": "./assets/img/icons/categories/bicycle.svg"
+      }
+    ]
+  }
+]

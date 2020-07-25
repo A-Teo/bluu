@@ -2,6 +2,12 @@
 
 #ad {
     height: 250px;
+    display: block;
+    border-radius: 15px;
+    background: white;
+    text-align: center;
+    box-shadow: 3px 3px 5px grey;
+    margin: 1rem 0;
 }
 
 @media only screen and (height:90px) {
