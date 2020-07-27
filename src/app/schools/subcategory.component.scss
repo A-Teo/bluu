@@ -1,0 +1,44 @@
+.tab-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+a.category {
+    text-align: center;
+    margin: 1rem 0;
+    width: 12.6rem;
+    cursor: pointer;
+}
+
+a.category div.image {
+    height: 12rem;
+    width: 12rem;
+    padding: 2rem;
+    border: 0.3rem solid #00a6e6;
+    border-radius: 5rem;
+    text-align: center;
+    transition: 0.3s all;
+}
+
+a.category:hover div.image {
+    border: 0.3rem solid #ffffff;
+    background-color: #00a6e6;
+}
+
+a.category div.image img {
+    height: 7rem;
+    width: 7rem;
+    filter: invert(46%) sepia(100%) saturate(2444%) hue-rotate(167deg) brightness(100%) contrast(101%);
+}
+
+a.category:hover div.image img {
+    filter: invert(82%) sepia(88%) saturate(0%) hue-rotate(105deg) brightness(111%) contrast(101%);
+}
+
+a.category span {
+    text-transform: uppercase;
+    color: #00476d;
+    font-size: 1.5rem;
+    font-weight: bold;
+}

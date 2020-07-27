@@ -1,0 +1,65 @@
+<div class="tab-container">
+    <h1 class="subcategory">{{ subcategory }}</h1>
+
+    <div class="row">
+        <div class="col-md">
+            <div class="row">
+                <div class="col">
+                    <h2>{{ school.title }}</h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-auto">
+                    <div class="image">
+                        <img [src]='school.logo' alt="">
+                    </div>
+                </div>
+                <div class="col" *ngIf="school.description">
+                    <h3>Descripción</h3>
+                    <p [innerHTML]="school.description"></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>
+                        <strong>Horarios:</strong> {{ school.schedule }} <br>
+                        <strong>Precio:</strong> {{ school.price }} <br>
+                        <strong>Lugar:</strong> {{ school.place }} <br>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-auto">
+            <div *ngIf="school.map || school.photos">
+                <div class="row">
+                    <ul ngbNav #navuf="ngbNav" class="nav-tabs" [destroyOnHide]="false">
+                        <li ngbNavItem *ngIf="school.map">
+                            <a ngbNavLink>Ubicación</a>
+                            <ng-template ngbNavContent>
+                                <div [innerHTML]="school.map | safe: 'html'"></div>
+                            </ng-template>
+                        </li>
+                        <li ngbNavItem *ngIf="school.photos">
+                            <a ngbNavLink>Fotografías</a>
+                            <ng-template ngbNavContent>
+                                <ngb-carousel>
+                                    <ng-template ngbSlide *ngFor="let photo of school.photos">
+                                        <img [src]="photo">
+                                    </ng-template>
+                                </ngb-carousel>
+                            </ng-template>
+                        </li>
+                    </ul>
+                </div>
+                <div class="row">
+                    <div [ngbNavOutlet]="navuf" class="tab"></div>
+                </div>
+            </div>
+            <div class="row justify-content-end">
+                <div class="col-auto">
+                    <button class="btn btn-primary btn-sm">Inscribirse</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

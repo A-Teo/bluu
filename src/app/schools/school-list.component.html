@@ -1,0 +1,19 @@
+<div class="tab-container">
+    <h1 class="subcategory">{{ subcategory }}</h1>
+
+    <div class="school row" *ngFor="let school of schools">
+        <div class="image col-md-auto">
+            <img [src]='school.logo' alt="">
+        </div>
+        <div class="details col-md">
+            <h2>{{ school.title }}</h2>
+            <p>
+                <strong>Horarios:</strong> {{ school.schedule }} <br>
+                <strong>Precio:</strong> {{ school.price }} <br>
+                <strong>Lugar:</strong> {{ school.place }} <br>
+            </p>
+            <button [routerLink]="[school.slug]" class="btn btn-primary btn-sm">Ver más</button>
+            <button class="btn btn-primary btn-sm">Inscribirse</button>
+        </div>
+    </div>
+</div>

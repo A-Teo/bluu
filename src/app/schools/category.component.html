@@ -1,0 +1,14 @@
+<app-header-v2></app-header-v2>
+<app-header></app-header>
+<div class="bg-gray">
+    <div class="container">
+        <ul ngbNav class="nav-pills nav-justified">
+            <li [ngbNavItem]="category.title" *ngFor="let category of categories">
+                <a ngbNavLink [routerLink]="[category.slug]">{{ category.title | titlecase }}</a>
+            </li>
+        </ul>
+
+        <router-outlet></router-outlet>
+    </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,8 @@
+<div class="tab-container">
+    <a [routerLink]="[subcategory.slug]" class="category" *ngFor="let subcategory of subcategories">
+        <div class="image">
+            <img [src]='subcategory.logo' alt="">
+        </div>
+        <span>{{ subcategory.title }}</span>
+    </a>
+</div>
