@@ -1,11 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
-import { ICategory } from 'src/app/bluu/categories/category';
-import { CategoryService } from 'src/app/bluu/categories/category.service';
+import { ICategory } from 'src/app/schools/category';
+import { CategoryService } from 'src/app/schools/category.service';
 
 @Component({
-  selector: 'app-view-e',
   templateUrl: './view-e.component.html',
   styleUrls: ['./view-e.component.css']
 })

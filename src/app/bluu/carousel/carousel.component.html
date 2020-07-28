@@ -1,7 +1,8 @@
-<div class="carousel" data-flickity='{ "prevNextButtons": true,  "pageDots": true,  "wrapAround": true, "imagesLoaded": true, "percentPosition": true, "autoPlay": true }'>
-    <img src="./assets/img/theme/slide_1.jpg" alt="s1" />
+<div class="banner-carousel">
+    <img [src]="slide" *ngFor="let slide of slides" />
+    <!-- <img src="./assets/img/theme/slide_1.jpg" alt="s1" />
     <img src="./assets/img/theme/slide_2.jpg" alt="s2" />
     <img src="./assets/img/theme/slide_3.jpg" alt="s3" />
     <img src="./assets/img/theme/slide_4.jpg" alt="s4" />
-    <img src="./assets/img/theme/slide_5.jpg" alt="s5" />
+    <img src="./assets/img/theme/slide_5.jpg" alt="s5" /> -->
 </div>

@@ -13,7 +13,7 @@
                 <strong>Lugar:</strong> {{ school.place }} <br>
             </p>
             <button [routerLink]="[school.slug]" class="btn btn-primary btn-sm">Ver más</button>
-            <button class="btn btn-primary btn-sm">Inscribirse</button>
+            <button class="btn btn-primary btn-sm" (click)="open(school.title, school.price )">Inscribirse</button>
         </div>
     </div>
 </div>

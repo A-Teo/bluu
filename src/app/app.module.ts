@@ -6,6 +6,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule } from '@angular/router';
 
 import { AppRoutingModule } from './app.routing';
+import { SchoolModule } from './schools/school.module';
 
 import { AppComponent } from './app.component';
 import { SignupComponent } from './signup/signup.component';
@@ -13,12 +14,12 @@ import { LandingComponent } from './landing/landing.component';
 import { ProfileComponent } from './profile/profile.component';
 import { HomeComponent } from './home/home.component';
 import { NavbarComponent } from './shared/navbar/navbar.component';
-import { FooterComponent } from './shared/footer/footer.component';
+// import { FooterComponent } from './shared/footer/footer.component';
 
 import { HomeModule } from './home/home.module';
 import { LoginComponent } from './login/login.component';
-import { HeaderComponent } from './bluu/header/header.component';
-import { HeaderV2Component } from './bluu/header-v2/header-v2.component';
+// import { HeaderComponent } from './bluu/header/header.component';
+// import { HeaderV2Component } from './bluu/header-v2/header-v2.component';
 import { SubscribeFormComponent } from './bluu/subscribe-form/subscribe-form.component';
 import { SubscribeFormOpenComponent } from './bluu/subscribe-form-open/subscribe-form-open.component';
 import { RegisterUserComponent } from './bluu/register-user/register-user.component';
@@ -46,10 +47,10 @@ import { RegistrationBannerComponent } from './bluu/registration-banner/registra
     LandingComponent,
     ProfileComponent,
     NavbarComponent,
-    FooterComponent,
+    // FooterComponent,
     LoginComponent,
-    HeaderComponent,
-    HeaderV2Component,
+    // HeaderComponent,
+    // HeaderV2Component,
     SubscribeFormComponent,
     SubscribeFormOpenComponent,
     RegisterUserComponent,
@@ -75,6 +76,7 @@ import { RegistrationBannerComponent } from './bluu/registration-banner/registra
     NgbModule,
     FormsModule,
     RouterModule,
+    SchoolModule,
     AppRoutingModule,
     HomeModule,
     // NgImageSliderModule

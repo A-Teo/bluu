@@ -20,6 +20,13 @@ export class CategoryService {
       );
   }
 
+  getCategory(category: string): Observable<ICategory | undefined> {
+    return this.getCategories()
+      .pipe(
+        map((categories: ICategory[]) => categories.find(c => c.slug === category))
+      );
+  }
+
   getSubcategories(category: string): Observable<ISubcategory[] | undefined> {
     return this.getCategories()
       .pipe(

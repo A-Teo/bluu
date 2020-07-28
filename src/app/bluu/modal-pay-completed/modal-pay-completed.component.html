@@ -1,3 +1,37 @@
-<p>
-  modal-pay-completed works!
-</p>
+<div class="modal-header">
+    <h3 class="modal-title">INSCRIPCÍON COMPLETA</h3>
+  <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<div class="modal-body">
+  <div>    
+    <div>
+      <div class="left">
+        <img class="logo" src="./assets/img/brand/logo-bluu-color-vertical.svg" alt="">
+      </div>
+      <div class="right">
+        <div class="image">
+          <img class="download" src="./assets/img/theme/download.svg" alt="">
+        </div>
+        <small class="download">descargar</small>
+      </div>
+    </div>
+    <div class="middle">
+      <h2>{{ subcategory }}</h2>
+      <h3>{{ school }}</h3>
+      <p>Importe, {{ price }}</p>
+    </div>
+  </div>
+  <h4>{{ name }}</h4>
+  <div class="category">
+      <div class="image">
+          <img [src]="category.logo" alt="">
+      </div>
+      <span>{{ category.title }}</span>
+  </div>
+  <p class="lead"><strong>{{ code }}</strong></p>
+</div>
+<div class="modal-footer">
+  <button type="button" class="btn btn-success" (click)="activeModal.close('Close click')">Aceptar</button>
+</div>

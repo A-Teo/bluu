@@ -1,54 +1,121 @@
 [
   { 
-    "title": "deportes",
+    "title": "Deportes",
+    "slug": "deportes",
     "logo": "./assets/img/icons/categories/bicycle.svg",
-    "items": [
+    "image": "./assets/img/theme/cat-img-1.jpg",
+    "subcategories": [
       {
         "title": "ciclismo",
-        "logo": "./assets/img/icons/categories/bicycle.svg"
+        "slug": "ciclismo",
+        "logo": "./assets/img/icons/categories/bicycle.svg",
+        "schools": [
+          {
+            "title": "Escuela 1",
+            "slug": "escuela-1",
+            "logo": "./assets/img/icons/categories/bicycle.svg",
+            "schedule": "10:00 - 11:00, 15:00 - 16:00, 16:00 - 17:00, 18:00 - 19:00",
+            "price": "Bs. 350 mes completo",
+            "place": "Calle tantos tantos entre Av. tantos y tantos 1234",
+            "description": "<p><strong>Día:</strong> 26 ago 2019 <br><strong>Edades:</strong> 13-18 <br><strong>Lugar:</strong> Estadio <br></p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ncidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci taon ullamcorper suscipit lobors nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit.</p>",
+            "photos": [
+              "https://picsum.photos/id/1011/350/500",
+              "https://picsum.photos/id/1077/350/500",
+              "https://picsum.photos/id/177/350/500"
+            ],
+            "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9055.810630388549!2d-66.15212712132833!3d-17.387807744829693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e37408573c61c3%3A0x5b37d69f91f032ed!2sPlaza%20Col%C3%B3n!5e0!3m2!1ses-419!2sbo!4v1595792531862!5m2!1ses-419!2sbo' width='350' height='500' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0'></iframe>"
+          },
+          {
+            "title": "Escuela 2",
+            "slug": "escuela-2",
+            "logo": "./assets/img/icons/categories/bicycle.svg",
+            "schedule": "10:00 - 11:00, 15:00 - 16:00, 16:00 - 17:00, 18:00 - 19:00",
+            "price": "Bs. 250 mes completo",
+            "place": "Calle tantos tantos entre Av. tantos y tantos 1234",
+            "description": "<p><strong>Día:</strong> 2020-07-30 <br><strong>Edades:</strong> 7-13 <br><strong>Lugar:</strong> Otro Estadio <br></p><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod ncidunt ut laoreet dolore magna aliquam erat volutpat.</p>",
+            "map": "<iframe src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6403.216045874403!2d-66.15511969455032!3d-17.393780301628972!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e373f71d56cae7%3A0x1044c8613655e441!2sPlaza%20de%20Armas%2014%20de%20Septiembre!5e0!3m2!1ses-419!2sbo!4v1595805317257!5m2!1ses-419!2sbo' width='350' height='500' frameborder='0' style='border:0;' allowfullscreen='' aria-hidden='false' tabindex='0'></iframe>"
+          }
+        ]
       },
       {
-        "title": "aletismo",
-        "logo": "./assets/img/icons/categories/bicycle.svg"
+        "title": "atletismo",
+        "slug": "atletismo",
+        "logo": "./assets/img/icons/categories/bicycle.svg",
+        "schools": [
+          {
+            "title": "Escuela 1 Atletismo",
+            "slug": "escuela-1-atletismo",
+            "logo": "./assets/img/icons/categories/bicycle.svg",
+            "schedule": "10:00 - 11:00, 15:00 - 16:00, 16:00 - 17:00, 18:00 - 19:00",
+            "price": "Bs. 350 mes completo",
+            "place": "Calle tantos tantos entre Av. tantos y tantos 1234",
+            "photos": [
+              "https://picsum.photos/id/281/350/500",
+              "https://picsum.photos/id/29/350/500"
+            ]
+          }
+        ]
       }
     ]
   },
   { 
-    "title": "arte",
+    "title": "Arte",
+    "slug": "arte",
     "logo": "./assets/img/icons/categories/bicycle.svg",
-    "items": [
+    "image": "https://picsum.photos/id/1026/270/512",
+    "subcategories": [
       {
         "title": "arte 1",
-        "logo": "./assets/img/icons/categories/bicycle.svg"
+        "slug": "arte-1",
+        "logo": "./assets/img/icons/categories/bicycle.svg",
+        "schools": [
+          {
+            "title": "Escuela 1 de Arte",
+            "slug": "escuela-1-de-arte",
+            "logo": "./assets/img/icons/categories/bicycle.svg",
+            "schedule": "10:00 - 11:00, 15:00 - 16:00, 16:00 - 17:00, 18:00 - 19:00",
+            "price": "Bs. 550 mes completo",
+            "place": "Calle tantos tantos entre Av. tantos y tantos 1234"
+          }
+        ]
       }
     ]
   },
   { 
-    "title": "posibilidades",
+    "title": "Posibilidades",
+    "slug": "posibilidades",
     "logo": "./assets/img/icons/categories/bicycle.svg",
-    "items": [
+    "image": "https://picsum.photos/id/1006/270/512",
+    "subcategories": [
       {
         "title": "posibilidad 1",
+        "slug": "posibilidad-1",
         "logo": "./assets/img/icons/categories/bicycle.svg"
       }
     ]
   },
   { 
-    "title": "fitness",
+    "title": "Fitness",
+    "slug": "fitness",
     "logo": "./assets/img/icons/categories/bicycle.svg",
-    "items": [
+    "image": "https://picsum.photos/id/1035/270/512",
+    "subcategories": [
       {
         "title": "fitness 1",
+        "slug": "fitness-1",
         "logo": "./assets/img/icons/categories/bicycle.svg"
       }
     ]
   },
   { 
-    "title": "apoyo",
+    "title": "Apoyo",
+    "slug": "apoyo",
     "logo": "./assets/img/icons/categories/bicycle.svg",
-    "items": [
+    "image": "https://picsum.photos/id/1025/270/512",
+    "subcategories": [
       {
         "title": "apoyo 1",
+        "slug": "apoyo-1",
         "logo": "./assets/img/icons/categories/bicycle.svg"
       }
     ]
